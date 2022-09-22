@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap");
+
+.App {
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+
+body {
+  background-color: rgb(255, 250, 164);
+}
+
+.btn {
+  height: 3rem;
+  width: 8rem;
+  margin-top: 2rem;
+  margin-left: 3rem;
+  border: 3px solid rgb(231, 173, 173);
+  border-radius: 0.5rem;
+  background-color: rgb(248, 227, 198);
+  font-size: 1.5rem;
+}
+
+.btn:hover {
+  background-color: rgb(244, 255, 200);
+}
+
+.bookCollection {
+  border: 2px solid red;
+  border-radius: 0.5rem;
+  margin-top: 3rem;
+  margin-left: 28rem;
+  margin-right: 25rem;
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+p {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+h2 {
+  color: rgb(117, 40, 40);
+}
+
+h3 {
+  color: rgb(22, 49, 107);
+}
+
+.textDeco {
+  text-decoration: none;
+  color: black;
+  border: 2px solid blue;
+  border-radius: 0.5rem;
+  padding: 0.3rem;
+}
+
+.textDeco:hover {
+  color: blue;
+  border: 2px solid black;
+  background-color: rgb(215, 208, 215);
+}
