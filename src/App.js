@@ -232,7 +232,7 @@ export default function App() {
 
             <h3> <span style={{color:"red"}}>Rating : </span>{item.rating}</h3>
 
-            <h5> <span style={{color:"red"}}>Description : </span>{item.description}</h5>
+            <h4> <span style={{color:"red"}}>Description : </span>{item.description}</h4>
 
             <h4>{item.link}</h4>
           </div>
