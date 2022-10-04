@@ -6,6 +6,8 @@ const bookObj = {
     {
       name: "Forge Your Future",
       author: "APJ Abdul Kalam",
+      rating: "4.4",
+      description: "Forge Your Future brings you a collection of candid, forthright, and inspiring solutions given by A. P. J. Abdul Kalam as replies to the hundreds of emails he receives daily.",
       link: (
         <a
           className="textDeco"
@@ -18,12 +20,14 @@ const bookObj = {
       )
     },
     {
-      name: "The 5 AM Club",
-      author: "Robin sharma",
+      name: "Attitude Is Everything",
+      author: "Jeff Keller",
+      rating: "4.5",
+      description: "Attitude decides our altitude and when we change your attitude, we change your life. Attitude is Everything: Change Your Attitude...Change Your Life is a success manual that gives plans for us to take control of our lives and unleash the untapped potential.",
       link: (
         <a
           className="textDeco"
-          href="https://dl.flipkart.com/s/44!6iOuuuN"
+          href="https://www.flipkart.com/attitude-is-everything/p/itmfbyjgqwayh3my?pid=9789351772071&lid=LSTBOK97893517720710CDYJK&marketplace=FLIPKART&q=self+help+book&store=bks&srno=s_1_3&otracker=search&otracker1=search&fm=productRecommendation%2Fsimilar&iid=47c21194-e879-4d97-86ca-31ddbd1a86e8.9789351772071.SEARCH&ppt=pp&ppn=pp&ssid=8ocq0vcvqo0000001664880250245&qH=d30d8a09732b7046"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -34,6 +38,8 @@ const bookObj = {
     {
       name: "The 4-Hour Work Week",
       author: "Timothy ferriss",
+      rating: "4.4",
+      description: "This book is a New York bestseller that teaches you how to reconstruct your life so as to not make it all about work.",
       link: (
         <a
           className="textDeco"
@@ -48,6 +54,8 @@ const bookObj = {
     {
       name: "Think and Grow Rich",
       author: "Napoleon Hill",
+      rating: "4.5",
+      description: " Hill established the Napoleon Hill Foundation, a non-profit educational institution whose mission is to promote his philosophy of leadership, self-motivation and individual achievement.",
       link: (
         <a
           className="textDeco"
@@ -64,6 +72,8 @@ const bookObj = {
     {
       name: " The Mistress Of Spices",
       author: "Chitra banerjee Divakaruni",
+      rating: "4.5",
+      description: "The Mistress Of Spices tells the story of Tilo, an Indian immigrant running an Indian spice shop in Oakland, who uses her inborn gift to help people through the mystical healing powers of her spices, and what happens when those powers are challenged when she falls in love with an American stranger.",
       link: (
         <a
           className="textDeco"
@@ -78,6 +88,8 @@ const bookObj = {
     {
       name: "Pride & Prejudice",
       author: "Jane Austin",
+      rating: "4.5",
+      description: "This collectable edition is beautifully crafted and designed. Perfect for gifting as well as for keeps. A prized edition for any library.",
       link: (
         <a
           className="textDeco"
@@ -92,6 +104,8 @@ const bookObj = {
     {
       name: "A Place Called Home",
       author: "Preeti shenoy",
+      rating: "4.8",
+      description: "A Place Called Home is a novel about secrets, family, and finding yourself, from bestselling author Preeti Shenoy.",
       link: (
         <a
           className="textDeco"
@@ -106,6 +120,8 @@ const bookObj = {
     {
       name: "It Ends with Us",
       author: "Colleen Hoover",
+      rating: "4.5",
+      description: "It involves the past and present of the female protagonist. it had a few dramatic twists in the story.",
       link: (
         <a
           className="textDeco"
@@ -122,6 +138,8 @@ const bookObj = {
     {
       name: "Teachings of Ramana Maharshi ",
       author: "Osborne",
+      rating: "4.6",
+      description: "This book brings together many of the conversations Maharshi had with his followers in an intimate portrait of his beliefs and teachings. Through these conversations, readers will discover Maharshi's simple discipline of self-enquiry: knowing oneself and looking inwards as the road to true understanding and enlightenment",
       link: (
         <a
           className="textDeco"
@@ -136,6 +154,8 @@ const bookObj = {
     {
       name: "Flowers on the Path",
       author: "sadhguru",
+      rating: "4.6",
+      description: "The book covers topics that span social issues, worldly affairs, individual challenges, or dimensions of the beyond. Each of these articles holds the possibility to shake you out of your set conclusions and to pave the way towards true knowing.",
       link: (
         <a
           className="textDeco"
@@ -150,6 +170,8 @@ const bookObj = {
     {
       name: "The Art of Happiness",
       author: "The dalai Lama",
+      rating: "4.5",
+      description: "Spiritual and temporal leader of Tibet and Nobel Prize winner, Dalai Lama tells his readers that happiness is the purpose of life and that every decision we take is to achieve happiness in life. With the help of conversations, stories, and meditations, the Dalai Lama shows his readers how to overcome anxiety, anger, insecurity and discouragement. ",
       link: (
         <a
           className="textDeco"
@@ -164,6 +186,8 @@ const bookObj = {
     {
       name: "You Can Heal Your Life",
       author: "Louise Hay",
+      rating: "4.5",
+      description: "You Can Heal Your Life (Hindi) is a book that enlightens readers about the effect that the mind truly has on all aspects of life. It states that through mental positive reinforcement, people can enhance their life.",
       link: (
         <a
           className="textDeco"
@@ -188,7 +212,7 @@ export default function App() {
   const buttons = Object.keys(bookObj).map((item) => {
     return (
       <button className="btn" onClick={() => clickHandler(item)}>
-        <span style={{textDecoration:'underline'}}>{item}</span>
+        {item}
       </button>
     );
   });
@@ -205,6 +229,10 @@ export default function App() {
             <h2>{item.name}</h2>
 
             <h3>by {item.author}</h3>
+
+            <h3> <span style={{color:"red"}}>Rating : </span>{item.rating}</h3>
+
+            <h5> <span style={{color:"red"}}>Description : </span>{item.description}</h5>
 
             <h4>{item.link}</h4>
           </div>
