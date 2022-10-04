@@ -188,7 +188,7 @@ export default function App() {
   const buttons = Object.keys(bookObj).map((item) => {
     return (
       <button className="btn" onClick={() => clickHandler(item)}>
-        {item}
+        <span style={{textDecoration:'underline'}}>{item}</span>
       </button>
     );
   });
